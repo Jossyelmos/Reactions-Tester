@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+
+        <style type="text/css">
+
+            body {
+
+                font-family: sans-serif;
+            }
+
+            .circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                float: left;
+                margin: 20px;
+            }
+
+            #blueCircle {
+                background-color: blue;
+            }
+            #greenCircle {
+                background-color: green;
+            }
+            #redCircle {
+                background-color: red;
+            }
+
+            #shape {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                display: none;
+                position: relative;
+            }
+
+            #bold {
+
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <p id="text">Hello Amos</p>
+        <button id="button">Click Me</button>
+        <p id="secondParag">Javascript is ....</p>
+        <button id="secondButt">Change Content</button>
+        <p id="thirdParag"></p>
+        <button id="thirdButt">Content Appeared</button>
+
+        <div class="circle" id="blueCircle"></div>
+        <div class="circle" id="greenCircle"></div>
+        <div class="circle" id="redCircle"></div> -->
+        <!-- <input type="text" id="paragInput">
+        <button id="butt">Change text</button>
+        <p id="parag">This is some text</p> -->
+
+        <!-- <p>What is the magic word?</p>
+        <p id="parag"></p>
+        <p><input type="text" id="magicWord"></p>
+        <p><button id="magicButton">Enter</button></p> -->
+
+        <!-- <p id="parag">How many fingers am I holding up?</p>
+        <p id="answer"></p>
+        <input type="text" id="inp">
+        <button id="butt">Guess</button> -->
+        <!-- <p id="parag">How many fingers are you holding up?</p>
+        <p id="answer"></p>
+        <p>
+            <select id="inp">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button id="butt">Guess</button>
+        </p> -->
+
+        <h1>Test Your Reactions!</h1>
+
+        <p>Click on the boxes and circles as quickly as you can!</p>
+
+        <p id="bold">Your time: <span id="timeTaken"></span></p>
+
+        <div id="shape"></div>
+
+        <script type="text/javascript">
+            // document.getElementById('button').onclick = function() {
+            //     document.getElementById('text').innerHTML = 'Hello Wumi';
+            // }
+
+            // document.getElementById('secondButt').onclick = function() {
+            //     document.getElementById('secondParag').innerHTML = "I think " + document.getElementById('secondParag').innerHTML + " Awesome";
+            // }
+
+            // document.getElementById('thirdButt').onclick = function() {
+            //     document.getElementById('thirdParag').innerHTML = 'Hello World!';
+            // }
+
+            // document.getElementById('blueCircle').onclick = function() {
+            //     document.getElementById('blueCircle').style.display = 'none';
+            // }
+            // document.getElementById('greenCircle').onclick = function() {
+            //     document.getElementById('greenCircle').style.display = 'none';
+            // }
+            // document.getElementById('redCircle').onclick = function() {
+            //     document.getElementById('redCircle').style.display = 'none';
+            // }
+
+            // JAVASCRIPT VARIABLES
+
+            // document.getElementById('butt').onclick = function() {
+            //     var textEntered = '';
+
+            //     textEntered = document.getElementById('paragInput').value;
+            //     // alert(textEntered);
+
+            //     document.getElementById('parag').innerHTML = textEntered;
+            // }
+
+
+            // JAVASCRIPT ARRAYS
+            // var myArray = new Array();
+
+            // myArray[0] = 'pizza';
+            // myArray[1] = 'chocolate';
+            // myArray[2] = 'burger';
+
+            // const tweets = ['Morning everyone!', 'I love coffee!', 'i need some rest!', 'Conflakes for breakfast', 'Back to work'];
+            // tweets.push('Back to work');
+            // tweets.splice(1, 1, 'Conflakes for breakfast');
+
+            //  console.log(tweets);
+
+            // IF STATEMENT
+
+            // document.getElementById('magicButton').onclick = function() {
+
+            //     var magicWordEntered = document.getElementById('magicWord').value;
+
+            //     var magicWord = 'God is Good';
+
+            //     if (magicWordEntered == magicWord) {
+
+            //         document.getElementById('parag').innerHTML = 'Yeah, you got it. the magic word is ' + magicWord;
+
+            //     } else {
+
+            //         document.getElementById('parag').innerHTML = 'Nope, try again...'
+
+            //     }
+            // }
+
+            // document.getElementById('butt').onclick = function() {
+
+            //     var guessNumber = Math.floor((Math.random() * 10) + 1);
+
+            //     var guessNumberEntered = document.getElementById('inp').value;
+
+            //     if (guessNumberEntered == guessNumber) {
+
+            //         document.getElementById('answer').innerHTML = 'Correct!. The number is ' + guessNumber;
+
+            //     } else {
+
+            //         document.getElementById('answer').innerHTML = 'Nope, the number is ' + guessNumber + '. please try again..'
+            //     }
+
+            // }
+
+            // FOR LOOPS
+
+            // var tweetString = "";
+
+            // var i = 0;
+
+            // for ( var i = 0; i < tweets.length; i++) {
+
+            //     tweetString = tweetString + '<p>' + tweets[i] + '</p>';
+
+            // }
+
+            // WHILE LOOP
+
+            // while (i < tweets.length) {
+
+            //     tweetString = tweetString + '<p>' + tweets[i] + '</p>';
+
+            //     i++
+
+            // }
+
+            // document.getElementById('answer').innerHTML = tweetString;
+
+            // document.getElementById('butt').onclick = function() {
+
+            //     var myNumber = document.getElementById('inp').value;
+
+            //     var gotIt = false;
+
+            //     var numberOfGuesses = 1;
+
+            //     while (gotIt == false) {
+
+            //         var guessNumber = Math.floor((Math.random() * 10) + 1);
+
+            //         if (guessNumber == myNumber) {
+
+            //             var gotIt = true;
+
+            //             document.getElementById('answer').innerHTML = 'Got it!. It was ' + guessNumber + '.  It took me ' + numberOfGuesses + ' guesses';
+
+            //         } else {
+
+            //             numberOfGuesses++;
+
+            //         }
+            //     }
+            // }
+
+            // JAVASCRIPT FUNCTION
+
+            // function average(a, b) {
+
+            //     return ((a + b) / 2);
+
+            // }
+
+            // var x = 5;
+
+            // var y = 10;
+
+            // alert(average(x, y));
+
+            // function doAGuess(correctAnswer) {
+
+            //     var guessNumber = Math.floor((Math.random() * 10) + 1);
+
+            //         if (guessNumber == correctAnswer) {
+
+            //             return (true);
+
+            //         } else {
+
+            //             return(false);
+
+            //         }
+
+            // }
+
+            // document.getElementById('butt').onclick = function() {
+
+            //     var myNumber = document.getElementById('inp').value;
+
+            //     var gotIt = false;
+
+            //     var numberOfGuesses = 1;
+
+            //     while (gotIt == false) {
+
+            //         if (doAGuess(myNumber) == true) {
+
+            //             var gotIt = true;
+
+            //             document.getElementById('answer').innerHTML = 'Got it!. It was ' + myNumber + '.  It took me ' + numberOfGuesses + ' guesses';
+
+            //         } else {
+
+            //             numberOfGuesses++;
+
+            //         }
+            //     }
+            // }
+
+            // REACTION TESTER
+
+            var start = new Date().getTime();
+
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+                }
+
+            function makeShapeAppear() {
+
+                var top = Math.random() * 400;
+
+                var left = Math.random() * 400;
+
+                var width = (Math.random() * 200) + 100;
+
+                if (Math.random() > 0.5) {
+
+                    document.getElementById('shape').style.borderRadius = '50%';
+
+                } else {
+
+                    document.getElementById('shape').style.borderRadius = '0';
+
+                }
+
+                document.getElementById('shape').style.backgroundColor = getRandomColor();
+
+                document.getElementById('shape').style.width = width + 'px';
+
+                document.getElementById('shape').style.height = width + 'px';
+
+                document.getElementById('shape').style.top = top + 'px';
+
+                document.getElementById('shape').style.left = left + 'px';
+
+                document.getElementById('shape').style.display = 'block';
+
+                start = new Date().getTime();
+
+            }
+
+            function appearAfterDelay() {
+
+                setTimeout(makeShapeAppear, Math.random() * 2000);
+
+            };
+
+            appearAfterDelay();
+
+
+            document.getElementById('shape').onclick = function() {
+
+                document.getElementById('shape').style.display = 'none';
+
+                var end = new Date().getTime();
+
+                var timeTaken = (end - start) / 1000;
+
+                document.getElementById('timeTaken').innerHTML = timeTaken + 's';
+
+                appearAfterDelay();
+
+            }
+            
+
+        </script>
+    </body>
+</html>
+
+
+</head>
+<body>
+    
+</body>
+</html>
